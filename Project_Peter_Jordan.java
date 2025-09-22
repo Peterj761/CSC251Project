@@ -1,17 +1,17 @@
 public class Project_Peter_Jordan
-{
+{                                     //declaring instance variable
    private String policyNumber;
    private String providerName;
    private String firstName;
    private String lastName;
-   private double age;
+   private int age;
    private String smokerStatus;
    private double height;
    private double weight;
    
 
    
-  public Project_Peter_Jordan()
+  public Project_Peter_Jordan()// non arg constructor
   {
       policyNumber = "";
       providerName = "";
@@ -23,7 +23,7 @@ public class Project_Peter_Jordan
       weight = 0;
       
   }
-  public Project_Peter_Jordan(String pNum, String pName, String f, String l, double a, String sStatus, double h, double w)
+  public Project_Peter_Jordan(String pNum, String pName, String f, String l, int a, String sStatus, double h, double w) //constructor with args
   {
       policyNumber = pNum;
       providerName = pName;
@@ -37,14 +37,14 @@ public class Project_Peter_Jordan
       
       
   }
-  public double getBmi()
+  public double getBmi()//calculates the BMI
   {
     
      
       return (weight * 703)/(height * height);
       
   }
-  public double getInsurancePrice()
+  public double getInsurancePrice()//Calculares the insurabce price
   {
       double insuranceFee = 600;
       if (age < 50)
@@ -63,7 +63,7 @@ public class Project_Peter_Jordan
       }
       return insuranceFee;
       
-  }
+  }//getter methods
   public String getPolicyNumber()
   {
       return policyNumber;
@@ -80,7 +80,7 @@ public class Project_Peter_Jordan
   {
       return lastName;
   }
-  public double getAge()
+  public int getAge()
   {
       return age;
   }
